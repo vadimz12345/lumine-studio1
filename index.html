@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+    <title>Lumine Studio — Дизайн и разработка</title>
+	<meta name="keywords" content="создание сайтов, веб-студия, разработка сайтов, заказать сайт, IT агентство, создание лендингов, разработка интернет-магазина,
+	разработка сайтов под ключ цена, заказать сайт визитку Одесса, веб студия портфолио, услуги веб разработчика, создание корпоративного сайта,Lumine Studio,Lumine Studio отзывы,Lumine Studio веб студия,веб студия Одесса,дизайн студия Одесса
+	,заказать сайт в Одессе,SEO,увеличить продажи через сайт,дизайн для IT-продуктов,редизайн старого сайта,как повысить конверсию сайта,верстка сайта">
+	<meta name="description" content="Сайт веб-студии Lumine Studio.">
+	<meta name="author" content="Stefurin Vadim">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">LUMINE<span class="logo-dot">.</span></a>
+            <nav class="nav-desktop">
+                <a href="about.html" class="nav-link">О нас</a>
+                <div class="dropdown">
+                    <button class="nav-link dropdown-toggle" style="display: flex; align-items: center;">Услуги <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; margin-left: 4px;"><path d="m6 9 6 6 6-6"/></svg></button>
+                    <div class="dropdown-menu">
+                        <a href="service-uiux.html" class="dropdown-item">UI/UX Дизайн</a>
+                        <a href="service-branding.html" class="dropdown-item">Брендинг</a>
+                        <a href="service-development.html" class="dropdown-item">Веб-разработка</a>
+                        <a href="services.html" class="dropdown-item text-accent" style="margin-top: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">Все услуги &rarr;</a>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="blog.html" class="nav-link">Блог</a>
+                <a href="team.html" class="nav-link">Команда</a>
+                <a href="pricing.html" class="nav-link">Цены</a>
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <a href="brief.html" class="btn btn-primary btn-sm hidden-mobile">Начать проект</a>
+                <button class="mobile-toggle" aria-label="Меню"></button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="mobile-link">Главная</a>
+            <a href="about.html" class="mobile-link">О нас</a>
+            <a href="services.html" class="mobile-link">Услуги</a>
+            <a href="portfolio.html" class="mobile-link">Портфолио</a>
+            <a href="blog.html" class="mobile-link">Блог</a>
+            <a href="team.html" class="mobile-link">Команда</a>
+            <a href="pricing.html" class="mobile-link">Цены</a>
+            <a href="contact.html" class="mobile-link">Контакты</a>
+            <a href="brief.html" class="btn btn-primary w-full mt-4" style="justify-content: center;">Начать проект</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- СЕКЦИЯ HERO С КОМПОЗИЦИЕЙ ИЗ 2-Х ФОТО -->
+        <section class="hero">
+            <div class="container hero-container grid-2 align-center gap-64">
+                <div class="hero-content">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Мы создаём <br>
+                        цифровые <br>
+                        <span class="text-accent">впечатления</span>,<br>
+                        которые работают.
+                    </h1>
+
+                    <p class="hero-subtitle mb-8">
+                        Студия дизайна и разработки. Превращаем идеи в продукты,<br>
+                        которые нравятся пользователям и приносят результат бизнесу.
+                    </p>
+
+                    <div class="hero-actions mb-10">
+                        <a href="portfolio.html" class="btn btn-primary btn-lg group">
+                            Смотреть работы
+                            <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline btn-lg">Обсудить проект</a>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 48px;">
+                        <div><div style="font-size: 2rem; font-weight: 800; color: var(--color-text-main);">150+</div><div class="text-muted" style="font-size: 0.9rem;">Проектов</div></div>
+                        <div><div style="font-size: 2rem; font-weight: 800; color: var(--color-text-main);">80+</div><div class="text-muted" style="font-size: 0.9rem;">Клиентов</div></div>
+                        <div><div style="font-size: 2rem; font-weight: 800; color: var(--color-text-main);">6 лет</div><div class="text-muted" style="font-size: 0.9rem;">Опыта</div></div>
+                    </div>
+                </div>
+
+                <div class="hero-media" style="position: relative; height: 100%; min-height: 500px;">
+                    <!-- Первое фото (на заднем плане, большего размера) -->
+                    <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Команда за работой" style="position: absolute; top: 0; right: 0; width: 85%; height: 75%; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); z-index: 1;">
+                    <!-- Второе фото (на переднем плане, перекрывает первое) -->
+                    <img src="https://images.unsplash.com/photo-1603201667141-5a2d4c673378?q=80&w=1496&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Код и разработка" style="position: absolute; bottom: 0; left: 0; width: 65%; height: 55%; object-fit: cover; border-radius: 24px; box-shadow: 0 30px 50px rgba(0,0,0,0.15); border: 10px solid #F6F9FC; z-index: 2;">
+                </div>
+            </div>
+        </section>
+
+        <!-- НОВАЯ СЕКЦИЯ ГАЛЕРЕИ / О НАС С ФОТОГРАФИЯМИ -->
+        <section class="section">
+            <div class="container grid-2 align-center gap-64">
+                <!-- Сетка из 3-х фотографий -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: center;">
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="UI дизайн" style="width: 100%; border-radius: 24px; object-fit: cover; aspect-ratio: 4/5;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <img src="https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Брендинг" style="width: 100%; border-radius: 24px; object-fit: cover; aspect-ratio: 1/1;">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Обсуждение проекта" style="width: 100%; border-radius: 24px; object-fit: cover; aspect-ratio: 1/1;">
+                    </div>
+                </div>
+
+                <div>
+                    <span class="eyebrow">Почему мы?</span>
+                    <h2 class="section-title mb-6">Погружаемся в ваш бизнес с головой</h2>
+                    <p class="text-muted mb-4" style="font-size: 1.1rem;">Каждый проект для нас — это не просто красивый макет. Мы исследуем рынок, изучаем вашу аудиторию и создаем продукт, который будет приносить реальную прибыль.</p>
+                    <p class="text-muted mb-8" style="font-size: 1.1rem;">В нашей команде работают опытные UX-исследователи, дизайнеры и разработчики, которые говорят с бизнесом на одном языке.</p>
+                    <a href="about.html" class="btn btn-outline">Узнать больше о студии</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- УСЛУГИ -->
+        <section class="section bg-light border-top border-bottom">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">Что мы делаем</span>
+                    <h2 class="section-title">Наши услуги</h2>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card bg-white"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div><h3>Брендинг</h3><p class="mb-4">Стратегические визуальные системы: логотипы, айдентика, брендбуки. Создаём образ, который запоминается.</p><a href="service-branding.html" class="card-link btn-text">Подробнее &rarr;</a></div>
+                    
+                    <div class="card bg-white"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div><h3>UI/UX Дизайн</h3><p class="mb-4">Интуитивные интерфейсы для сайтов и приложений. Прототипирование, дизайн-системы, UX-исследования.</p><a href="service-uiux.html" class="card-link btn-text">Подробнее &rarr;</a></div>
+                    
+                    <div class="card bg-white"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.9 1.2 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div><h3>Веб-разработка</h3><p class="mb-4">Быстрые, надёжные сайты на современных технологиях. React, Next.js, анимации, интеграции, CMS.</p><a href="service-development.html" class="card-link btn-text">Подробнее &rarr;</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОРТФОЛИО -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header flex-between" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+                    <div>
+                        <span class="eyebrow">Наши работы</span>
+                        <h2 class="section-title mb-0">Избранные проекты</h2>
+                    </div>
+                    <a href="portfolio.html" class="btn btn-outline btn-sm">Все проекты</a>
+                </div>
+
+                <div class="grid-3">
+                    <a href="project-1.html" class="portfolio-item">
+                        <div class="portfolio-img-wrap" style="background-color: #DBEAFE;"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Aether Finance"></div>
+                        <h2 style="font-size: 1.25rem; margin-bottom: 4px;">Aether Finance</h2><p class="text-muted">Финтех · UI/UX</p>
+                    </a>
+                    <a href="project-2.html" class="portfolio-item">
+                        <div class="portfolio-img-wrap" style="background-color: #F5F5F4;"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Nordic Home"></div>
+                        <h2 style="font-size: 1.25rem; margin-bottom: 4px;">Nordic Home</h2><p class="text-muted">E-commerce · Разработка</p>
+                    </a>
+                    <a href="project-3.html" class="portfolio-item">
+                        <div class="portfolio-img-wrap" style="background-color: #F3E8FF;"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Zenith Brand"></div>
+                        <h2 style="font-size: 1.25rem; margin-bottom: 4px;">Zenith Brand</h2><p class="text-muted">Брендинг · Айдентика</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ЭТАПЫ РАБОТЫ -->
+        <section class="section bg-dark text-white">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow text-accent-light">Как мы работаем</span>
+                    <h2 class="section-title">Наш процесс</h2>
+                </div>
+                <div class="grid-4 process-grid">
+                    <div class="process-step"><div class="process-num text-accent-light" style="font-size: 2rem; font-weight: 800; margin-bottom: 16px;">01</div><h2 class="mb-2">Брифинг</h2><p class="text-muted" style="color:#94A3B8;">Изучаем ваш бизнес, цели и аудиторию. Составляем техническое задание.</p></div>
+                    <div class="process-step"><div class="process-num text-accent-light" style="font-size: 2rem; font-weight: 800; margin-bottom: 16px;">02</div><h2 class="mb-2">Стратегия</h2><p class="text-muted" style="color:#94A3B8;">Анализируем конкурентов, формируем концепцию проекта.</p></div>
+                    <div class="process-step"><div class="process-num text-accent-light" style="font-size: 2rem; font-weight: 800; margin-bottom: 16px;">03</div><h2 class="mb-2">Дизайн</h2><p class="text-muted" style="color:#94A3B8;">Создаём прототипы, дизайн-макеты и согласовываем каждый этап.</p></div>
+                    <div class="process-step"><div class="process-num text-accent-light" style="font-size: 2rem; font-weight: 800; margin-bottom: 16px;">04</div><h2 class="mb-2">Запуск</h2><p class="text-muted" style="color:#94A3B8;">Разрабатываем, тестируем и запускаем проект. Обеспечиваем поддержку.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ -->
+        <section class="section bg-light border-bottom">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">Отзывы</span>
+                    <h2 class="section-title">Что говорят клиенты</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="card bg-white"><div class="text-accent mb-4" style="font-size: 1.5rem;">★★★★★</div><p class="mb-6">"Lumine Studio полностью изменили восприятие нашего бренда. Новый сайт увеличил конверсию на 40%."</p><div><strong>Сергей Волков</strong><br><span class="text-muted text-sm">CEO, Aether Finance</span></div></div>
+                    <div class="card bg-white"><div class="text-accent mb-4" style="font-size: 1.5rem;">★★★★★</div><p class="mb-6">"Профессиональная команда, которая слышит клиента. Сдали проект в срок, без лишних правок."</p><div><strong>Мария Кузнецова</strong><br><span class="text-muted text-sm">Founder, Nordic Home</span></div></div>
+                    <div class="card bg-white"><div class="text-accent mb-4" style="font-size: 1.5rem;">★★★★★</div><p class="mb-6">"Работать с Lumine — одно удовольствие. Они не просто делают красиво, они думают о результате."</p><div><strong>Алексей Попов</strong><br><span class="text-muted text-sm">CMO, Flow State</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section text-center">
+            <div class="container max-w-800">
+                <h2 class="section-title mb-6">Готовы начать<br>ваш проект?</h2>
+                <p class="hero-subtitle mb-8 mx-auto">Расскажите нам о своей идее — мы поможем воплотить её в жизнь.</p>
+                <div class="hero-actions justify-center">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Начать проект</a>
+                    <a href="portfolio.html" class="btn btn-outline btn-lg">Смотреть работы</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo">LUMINE<span class="logo-dot">.</span></a>
+                
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-circle" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-circle" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-circle" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Компания</h2>
+                <a href="about.html">О нас</a>
+                <a href="team.html">Команда</a>
+                <a href="blog.html">Блог</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Услуги</h2>
+                <a href="service-uiux.html">UI/UX Дизайн</a>
+                <a href="service-branding.html">Брендинг</a>
+                <a href="service-development.html">Веб-разработка</a>
+                <a href="pricing.html">Цены</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Контакты</h2>
+                <a href="mailto:luminestudio.hello@gmail.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    luminestudio.hello@gmail.com
+                </a>
+                <a href="tel:+380669908357" class="contact-link">
+                    +38 (095)688-07-26
+                </a>
+                <p>Одесса, улица Плещеева, 10</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Lumine Studio. Сайт создан для учебных целей</p>
+            <div class="footer-links">
+                <a href="privacy.html">Политика конфиденциальности</a>
+                <a href="terms.html">Условия использования</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="main.js"></script>
+</body>
+</html>

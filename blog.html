@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="создание сайтов, веб-студия, разработка сайтов, заказать сайт, IT агентство, создание лендингов, разработка интернет-магазина,
+	разработка сайтов под ключ цена, заказать сайт визитку Одесса, веб студия портфолио, услуги веб разработчика, создание корпоративного сайта,Lumine Studio,Lumine Studio отзывы,Lumine Studio веб студия,веб студия Одесса,дизайн студия Одесса
+	,заказать сайт в Одессе,SEO,увеличить продажи через сайт,дизайн для IT-продуктов,редизайн старого сайта,как повысить конверсию сайта,верстка сайта">
+	
+	<meta name="description" content="Сайт веб-студии Lumine Studio.">
+	
+	<meta name="author" content="Stefurin Vadim">
+	
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог — Lumine Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">LUMINE<span class="logo-dot">.</span></a>
+            
+            <!-- Навигация для ПК -->
+            <nav class="nav-desktop">
+                <a href="about.html" class="nav-link">О нас</a>
+                
+                <div class="dropdown">
+                    <button class="nav-link dropdown-toggle" style="display: flex; align-items: center;">
+                        Услуги
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; margin-left: 4px;"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="service-uiux.html" class="dropdown-item">UI/UX Дизайн</a>
+                        <a href="service-branding.html" class="dropdown-item">Брендинг</a>
+                        <a href="service-development.html" class="dropdown-item">Веб-разработка</a>
+                        <a href="services.html" class="dropdown-item text-accent" style="margin-top: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">Все услуги &rarr;</a>
+                    </div>
+                </div>
+
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="blog.html" class="nav-link">Блог</a>
+                <a href="team.html" class="nav-link">Команда</a>
+                <a href="pricing.html" class="nav-link">Цены</a>
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+
+            <!-- Кнопка и бургер-меню для мобилок -->
+            <div class="header-actions">
+                <a href="brief.html" class="btn btn-primary btn-sm hidden-mobile">Начать проект</a>
+                <button class="mobile-toggle" aria-label="Меню">
+                   
+                </button>
+            </div>
+        </div>
+
+        <!-- Мобильное меню (скрыто по умолчанию) -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="mobile-link">Главная</a>
+            <a href="about.html" class="mobile-link">О нас</a>
+            <a href="services.html" class="mobile-link">Услуги</a>
+            <a href="portfolio.html" class="mobile-link">Портфолио</a>
+            <a href="blog.html" class="mobile-link">Блог</a>
+            <a href="team.html" class="mobile-link">Команда</a>
+            <a href="pricing.html" class="mobile-link">Цены</a>
+            <a href="contact.html" class="mobile-link">Контакты</a>
+            <a href="brief.html" class="btn btn-primary w-full mt-4" style="justify-content: center;">Начать проект</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-hero text-center border-bottom">
+            <div class="container max-w-800">
+                <div class="section-label justify-center">
+                    <span class="label-line"></span><span class="eyebrow mb-0 text-main">Блог</span><span class="label-line"></span>
+                </div>
+                <h1 class="hero-title mt-4 mb-6">Идеи и инсайты</h1>
+                <p class="hero-subtitle mx-auto mb-0">Делимся опытом, мыслями и новостями из мира дизайна и технологий.</p>
+            </div>
+        </section>
+
+        <section class="section bg-light border-bottom">
+            <div class="container">
+                <a href="blog-post.html" class="grid-2 align-center group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-decoration: none; color: inherit;">
+                    <div class="portfolio-img-wrap mb-0" style="aspect-ratio: 16/9; border-radius: 20px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" alt="Тренды дизайна" style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                    </div>
+                    <div>
+                        <div style="display: flex; gap: 12px; margin-bottom: 16px;">
+                            <span style="background: #E0E7FF; color: #1D4ED8; padding: 4px 12px; border-radius: 99px; font-size: 0.8rem; font-weight: 700;">Дизайн</span>
+                            <span style="background: rgba(37, 70, 176, 0.1); color: var(--color-accent); padding: 4px 12px; border-radius: 99px; font-size: 0.8rem; font-weight: 700;">Главная статья</span>
+                        </div>
+                        <h2 class="section-title mb-4" style="font-size: 2rem;">Тренды веб-дизайна 2026: Что будет актуально?</h2>
+                        <p class="text-muted mb-6">Обзор главных визуальных тенденций: иммерсивная 3D-графика, типографика как главный герой, AI-генерация и возвращение к минимализму.</p>
+                        <div class="text-sm text-muted mb-6">Вадим Стефурин • 12 марта 2026 • 5 мин чтения</div>
+                        <span class="btn-text">Читать статью &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid-3">
+                    <a href="blog-react.html" class="portfolio-item group">
+                        <div class="portfolio-img-wrap" style="aspect-ratio: 16/9;"><img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=800&q=80" alt="Оптимизация React"></div>
+                        <div class="mb-2"><span style="background: #D1FAE5; color: #047857; padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 700;">Разработка</span></div>
+                        <h2 class="mt-3 mb-2" style="font-size: 1.25rem;">Оптимизация производительности React-приложений</h2>
+                        <p class="text-sm text-muted mb-4">Практические советы по ускорению загрузки: memo, useMemo, lazy loading.</p>
+                        <div class="text-xs text-muted">5 марта 2026</div>
+                    </a>
+                    <a href="blog-ux.html" class="portfolio-item group">
+                        <div class="portfolio-img-wrap" style="aspect-ratio: 16/9;"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="UX исследования"></div>
+                        <div class="mb-2"><span style="background: #F3E8FF; color: #7E22CE; padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 700;">UX</span></div>
+                        <h2 class="mt-3 mb-2" style="font-size: 1.25rem;">Гайд по UX-исследованиям для стартапов</h2>
+                        <p class="text-sm text-muted mb-4">Как проводить качественные исследования пользователей без большого бюджета.</p>
+                        <div class="text-xs text-muted">28 февраля 2026</div>
+                    </a>
+                    <a href="blog-typography.html" class="portfolio-item group">
+                        <div class="portfolio-img-wrap" style="aspect-ratio: 16/9;"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&q=80" alt="Типографика"></div>
+                        <div class="mb-2"><span style="background: #E0E7FF; color: #1D4ED8; padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 700;">Дизайн</span></div>
+                        <h2 class="mt-3 mb-2" style="font-size: 1.25rem;">Типографика в вебе: Больше чем просто текст</h2>
+                        <p class="text-sm text-muted mb-4">Почему выбор шрифта влияет на конверсию и восприятие бренда.</p>
+                        <div class="text-xs text-muted">15 февраля 2026</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+ <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo">LUMINE<span class="logo-dot">.</span></a>
+                
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-circle" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-circle" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-circle" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Компания</h2>
+                <a href="about.html">О нас</a>
+                <a href="team.html">Команда</a>
+                <a href="blog.html">Блог</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Услуги</h2>
+                <a href="service-uiux.html">UI/UX Дизайн</a>
+                <a href="service-branding.html">Брендинг</a>
+                <a href="service-development.html">Веб-разработка</a>
+                <a href="pricing.html">Цены</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Контакты</h2>
+                <a href="mailto:luminestudio.hello@gmail.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    luminestudio.hello@gmail.com
+                </a>
+                <a href="tel:+380669908357" class="contact-link">
+                    +38 (095)688-07-26
+                </a>
+                <p>Одесса, улица Плещеева, 10</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Lumine Studio. Сайт создан для учебных целей</p>
+            <div class="footer-links">
+                <a href="privacy.html">Политика конфиденциальности</a>
+                <a href="terms.html">Условия использования</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+<meta name="keywords" content="создание сайтов, веб-студия, разработка сайтов, заказать сайт, IT агентство, создание лендингов, разработка интернет-магазина,
+	разработка сайтов под ключ цена, заказать сайт визитку Одесса, веб студия портфолио, услуги веб разработчика, создание корпоративного сайта,Lumine Studio,Lumine Studio отзывы,Lumine Studio веб студия,веб студия Одесса,дизайн студия Одесса
+	,заказать сайт в Одессе,SEO,увеличить продажи через сайт,дизайн для IT-продуктов,редизайн старого сайта,как повысить конверсию сайта,верстка сайта">
+	
+	<meta name="description" content="Сайт веб-студии Lumine Studio.">
+	
+	<meta name="author" content="Stefurin Vadim">
+	
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Lumine Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .landing-hero {
+            background: var(--color-bg-dark);
+            color: #fff;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .landing-nav a {
+            color: var(--color-text-main);
+            font-weight: 600;
+            margin-left: 24px;
+            transition: 0.3s;
+        }
+
+        .landing-nav a:hover {
+            color: var(--color-accent);
+        }
+
+        .promo-blocks {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .promo-block {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            background: #fff;
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+            border: 1px solid #e5e7eb;
+        }
+
+        .promo-block:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .promo-block-img {
+            width: 42%;
+            min-height: 260px;
+            border-radius: 20px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .promo-block-img img {
+            width: 100%;
+            height: 100%;
+            min-height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .promo-block-content {
+            flex: 1;
+        }
+
+        .promo-block-content h3 {
+            font-size: 28px;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--color-text-main);
+        }
+
+        .promo-block-content p {
+            color: var(--color-text-muted);
+            margin-bottom: 22px;
+            line-height: 1.7;
+        }
+
+        .promo-tag {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--color-accent);
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .promo-block,
+            .promo-block:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .promo-block-img {
+                width: 100%;
+            }
+
+            .promo-block-content h3 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            LUMINE<span class="logo-dot">.</span>
+            <span style="font-size:1rem; font-weight:500; color:var(--color-text-muted);">| Promo</span>
+        </a>
+
+        <nav class="hidden-mobile landing-nav">
+            <a href="#portfolio">Блоки</a>
+            <a href="#benefits">Преимущества</a>
+            <a href="#lead">Оставить заявку</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="brief.html" class="btn btn-primary btn-sm">Заказать сайт</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="landing-hero">
+        <div class="container max-w-800">
+            <div class="badge" style="background: rgba(255,255,255,0.1);">
+                <span class="badge-dot" style="background: #10B981;"></span>
+                
+            </div>
+
+            <h1 class="hero-title mt-4 mb-6" style="color:#fff;">
+                Корпоративный сайт,<br>который приводит клиентов
+            </h1>
+
+            <p class="hero-subtitle mx-auto mb-10" style="color:#94A3B8;">
+                Разработка сайта, базовый брендинг, удобная структура и адаптивная верстка для бизнеса.
+            </p>
+
+            <a href="#lead" class="btn btn-primary btn-lg">Получить предложение</a>
+
+            <p class="mt-4 text-sm" style="color:#94A3B8;">
+                *Скидка 15% при заявке до конца месяца
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section bg-light">
+        <div class="container">
+
+            <div class="section-header text-center">
+                <h2 class="section-title">Что входит в разработку сайта</h2>
+                <p class="section-subtitle">
+                    Мы создаём не просто красивую страницу, а полноценный инструмент для продвижения бизнеса.
+                </p>
+            </div>
+
+            <div class="promo-blocks">
+
+                <div class="promo-block">
+                    <div class="promo-block-img">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Разработка корпоративного сайта">
+                    </div>
+
+                    <div class="promo-block-content">
+                        <span class="promo-tag">01 / Разработка</span>
+                        <h3>Корпоративный сайт под ключ</h3>
+                        <p>
+                            Создаём современный сайт для компании с продуманной структурой,
+                            удобной навигацией, адаптивной версткой и понятной подачей услуг.
+                        </p>
+                        <a href="index.html" class="btn btn-primary">Перейти на основной сайт</a>
+                    </div>
+                </div>
+
+                <div class="promo-block">
+                    <div class="promo-block-img">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Дизайн сайта">
+                    </div>
+
+                    <div class="promo-block-content">
+                        <span class="promo-tag">02 / Дизайн</span>
+                        <h3>Индивидуальный визуальный стиль</h3>
+                        <p>
+                            Разрабатываем аккуратный и современный дизайн, который подчёркивает стиль бренда
+                            и помогает пользователю быстро понять преимущества компании.
+                        </p>
+                        <a href="index.html" class="btn btn-primary">Перейти на основной сайт</a>
+                    </div>
+                </div>
+
+                <div class="promo-block">
+                    <div class="promo-block-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Адаптивная верстка сайта">
+                    </div>
+
+                    <div class="promo-block-content">
+                        <span class="promo-tag">03 / Адаптивность</span>
+                        <h3>Корректная работа на всех устройствах</h3>
+                        <p>
+                            Сайт удобно открывается на компьютерах, планшетах и смартфонах.
+                            Все блоки, кнопки, изображения и формы подстраиваются под размер экрана.
+                        </p>
+                        <a href="index.html" class="btn btn-primary">Перейти на основной сайт</a>
+                    </div>
+                </div>
+
+                <div class="promo-block">
+                    <div class="promo-block-img">
+                        <img src="https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SEO оптимизация сайта">
+                    </div>
+
+                    <div class="promo-block-content">
+                        <span class="promo-tag">04 / SEO</span>
+                        <h3>Базовая SEO-оптимизация</h3>
+                        <p>
+                            Настраиваем правильные заголовки, описание страниц, семантическую структуру,
+                            быструю загрузку и понятную архитектуру для поисковых систем.
+                        </p>
+                        <a href="index.html" class="btn btn-primary">Перейти на основной сайт</a>
+                    </div>
+                </div>
+
+                <div class="promo-block">
+                    <div class="promo-block-img">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80" alt="Контент для сайта">
+                    </div>
+
+                    <div class="promo-block-content">
+                        <span class="promo-tag">05 / Контент</span>
+                        <h3>Подготовка текстов и изображений</h3>
+                        <p>
+                            Помогаем оформить информацию о компании, услугах, преимуществах и кейсах так,
+                            чтобы сайт выглядел профессионально и вызывал доверие у клиентов.
+                        </p>
+                        <a href="index.html" class="btn btn-primary">Перейти на основной сайт</a>
+                    </div>
+                </div>
+
+                <div class="promo-block">
+                    <div class="promo-block-img">
+                        <img src="https://images.unsplash.com/photo-1640163561346-7778a2edf353?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Поддержка сайта">
+                    </div>
+
+                    <div class="promo-block-content">
+                        <span class="promo-tag">06 / Поддержка</span>
+                        <h3>Запуск и дальнейшее сопровождение</h3>
+                        <p>
+                            После завершения разработки помогаем разместить сайт, проверить работу страниц,
+                            исправить ошибки и подготовить проект к публикации.
+                        </p>
+                        <a href="index.html" class="btn btn-primary">Перейти на основной сайт</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Что вы получаете?</h2>
+            </div>
+
+            <div class="grid-3">
+                <div class="card bg-white">
+                    <div class="card-icon text-accent" style="font-size: 24px; font-weight: bold;">1</div>
+                    <h3 class="text-xl font-bold mb-3">Современный дизайн</h3>
+                    <p class="text-sm text-muted">
+                        Адаптивный UI/UX дизайн, который идеально работает на ПК и смартфонах.
+                    </p>
+                    <a href="index.html" class="btn btn-outline btn-sm mt-4">Основной сайт</a>
+                </div>
+
+                <div class="card bg-white">
+                    <div class="card-icon text-accent" style="font-size: 24px; font-weight: bold;">2</div>
+                    <h3 class="text-xl font-bold mb-3">Высокую скорость</h3>
+                    <p class="text-sm text-muted">
+                        Оптимизированный код и изображения. Сайт загружается быстро и стабильно.
+                    </p>
+                    <a href="index.html" class="btn btn-outline btn-sm mt-4">Основной сайт</a>
+                </div>
+
+                <div class="card bg-white">
+                    <div class="card-icon text-accent" style="font-size: 24px; font-weight: bold;">3</div>
+                    <h3 class="text-xl font-bold mb-3">Удобную структуру</h3>
+                    <p class="text-sm text-muted">
+                        Логичная навигация, понятные разделы и удобный путь пользователя к заявке.
+                    </p>
+                    <a href="index.html" class="btn btn-outline btn-sm mt-4">Основной сайт</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lead" class="section bg-light">
+        <div class="container max-w-800">
+            <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm text-center">
+                <h2 class="section-title mb-2">Оставьте заявку</h2>
+
+                <p class="text-muted mb-6">
+                    Расскажите о проекте, и мы подберём подходящее решение для вашего бизнеса.
+                </p>
+
+                <a href="brief.html" class="btn btn-primary btn-lg w-full">
+                    Обсудить проект
+                </a>
+
+                <a href="index.html" class="btn btn-outline btn-lg w-full mt-4">
+                    Перейти на основной сайт
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer" style="padding: 40px 0;">
+    <div class="container text-center">
+        <a href="index.html" class="logo text-white">
+            LUMINE<span class="logo-dot">.</span>
+        </a>
+
+        <p class="text-muted text-sm mt-4">
+            © 2026 Lumine Studio. Специальное предложение.
+        </p>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>

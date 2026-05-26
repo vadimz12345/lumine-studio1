@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="создание сайтов, веб-студия, разработка сайтов, заказать сайт, IT агентство, создание лендингов, разработка интернет-магазина,
+	разработка сайтов под ключ цена, заказать сайт визитку Одесса, веб студия портфолио, услуги веб разработчика, создание корпоративного сайта,Lumine Studio,Lumine Studio отзывы,Lumine Studio веб студия,веб студия Одесса,дизайн студия Одесса
+	,заказать сайт в Одессе,SEO,увеличить продажи через сайт,дизайн для IT-продуктов,редизайн старого сайта,как повысить конверсию сайта,верстка сайта">
+	
+	<meta name="description" content="Сайт веб-студии Lumine Studio.">
+	
+	<meta name="author" content="Stefurin Vadim">
+	
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио — Lumine Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .filter-btn { padding: 10px 24px; border-radius: 999px; font-size: 0.9rem; font-weight: 600; border: none; background: var(--color-bg-light); color: var(--color-text-muted); cursor: pointer; transition: 0.3s; }
+        .filter-btn:hover { background: #e2e8f0; }
+        .filter-btn.active { background: var(--color-bg-dark); color: #fff; }
+        .project-item { transition: opacity 0.4s ease, transform 0.4s ease; }
+        .project-item.hidden { display: none; opacity: 0; transform: scale(0.95); }
+    </style>
+</head>
+<body>
+
+<header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">LUMINE<span class="logo-dot">.</span></a>
+            
+            <!-- Навигация для ПК -->
+            <nav class="nav-desktop">
+                <a href="about.html" class="nav-link">О нас</a>
+                
+                <div class="dropdown">
+                    <button class="nav-link dropdown-toggle" style="display: flex; align-items: center;">
+                        Услуги
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; margin-left: 4px;"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="service-uiux.html" class="dropdown-item">UI/UX Дизайн</a>
+                        <a href="service-branding.html" class="dropdown-item">Брендинг</a>
+                        <a href="service-development.html" class="dropdown-item">Веб-разработка</a>
+                        <a href="services.html" class="dropdown-item text-accent" style="margin-top: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">Все услуги &rarr;</a>
+                    </div>
+                </div>
+
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="blog.html" class="nav-link">Блог</a>
+                <a href="team.html" class="nav-link">Команда</a>
+                <a href="pricing.html" class="nav-link">Цены</a>
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+
+            <!-- Кнопка и бургер-меню для мобилок -->
+            <div class="header-actions">
+                <a href="brief.html" class="btn btn-primary btn-sm hidden-mobile">Начать проект</a>
+                <button class="mobile-toggle" aria-label="Меню">
+                   
+                </button>
+            </div>
+        </div>
+
+        <!-- Мобильное меню (скрыто по умолчанию) -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="mobile-link">Главная</a>
+            <a href="about.html" class="mobile-link">О нас</a>
+            <a href="services.html" class="mobile-link">Услуги</a>
+            <a href="portfolio.html" class="mobile-link">Портфолио</a>
+            <a href="blog.html" class="mobile-link">Блог</a>
+            <a href="team.html" class="mobile-link">Команда</a>
+            <a href="pricing.html" class="mobile-link">Цены</a>
+            <a href="contact.html" class="mobile-link">Контакты</a>
+            <a href="brief.html" class="btn btn-primary w-full mt-4" style="justify-content: center;">Начать проект</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-hero text-center border-bottom">
+            <div class="container max-w-800">
+                <div class="section-label justify-center">
+                    <span class="label-line"></span><span class="eyebrow mb-0 text-main">Наши работы</span><span class="label-line"></span>
+                </div>
+                <h1 class="hero-title mt-4 mb-6">Портфолио</h1>
+                <p class="hero-subtitle mx-auto mb-0">Избранные проекты, демонстрирующие наш подход к дизайну и разработке. Каждый проект — это история успеха.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="flex flex-wrap gap-3 mb-10" style="display: flex; gap: 12px; margin-bottom: 40px; justify-content: center;">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="uiux">UI/UX</button>
+                    <button class="filter-btn" data-filter="branding">Брендинг</button>
+                    <button class="filter-btn" data-filter="dev">Разработка</button>
+                </div>
+
+                <div class="grid-3" id="portfolio-grid">
+                    <a href="project-1.html" class="portfolio-item project-item group" data-category="uiux">
+                        <div class="portfolio-img-wrap" style="background-color: #DBEAFE; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80" alt="Aether">
+                            <span style="position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.9); padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 700; color: #333;">Финтех</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div>
+                                <h1 class="text-xl font-bold mb-1">Aether Finance</h1>
+                                <p class="text-sm text-muted">Редизайн мобильного банкинга</p>
+                            </div>
+                            <span class="text-xs text-muted font-bold mt-1">2025</span>
+                        </div>
+                    </a>
+
+                    <a href="project-2.html" class="portfolio-item project-item group" data-category="dev">
+                        <div class="portfolio-img-wrap" style="background-color: #F5F5F4; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" alt="Nordic">
+                            <span style="position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.9); padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 700; color: #333;">E-commerce</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div>
+                                <h1 class="text-xl font-bold mb-1">Nordic Home</h1>
+                                <p class="text-sm text-muted">Интернет-магазин мебели</p>
+                            </div>
+                            <span class="text-xs text-muted font-bold mt-1">2025</span>
+                        </div>
+                    </a>
+
+                    <a href="project-3.html" class="portfolio-item project-item group" data-category="branding">
+                        <div class="portfolio-img-wrap" style="background-color: #F3E8FF; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Zenith">
+                            <span style="position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.9); padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 700; color: #333;">Айдентика</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div>
+                                <h1 class="text-xl font-bold mb-1">Zenith Brand</h1>
+                                <p class="text-sm text-muted">Фирменный стиль для стартапа</p>
+                            </div>
+                            <span class="text-xs text-muted font-bold mt-1">2024</span>
+                        </div>
+                    </a>
+
+                    <a href="project-4.html" class="portfolio-item project-item group" data-category="uiux">
+                        <div class="portfolio-img-wrap" style="background-color: #D1FAE5; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Flow State">
+                            <span style="position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.9); padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 700; color: #333;">SaaS</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div>
+                                <h1 class="text-xl font-bold mb-1">Flow State</h1>
+                                <p class="text-sm text-muted">Платформа управления задачами</p>
+                            </div>
+                            <span class="text-xs text-muted font-bold mt-1">2024</span>
+                        </div>
+                    </a>
+
+                    <a href="project-5.html" class="portfolio-item project-item group" data-category="dev">
+                        <div class="portfolio-img-wrap" style="background-color: #FFEDD5; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80" alt="Oasis">
+                            <span style="position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.9); padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 700; color: #333;">Туризм</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div>
+                                <h1 class="text-xl font-bold mb-1">Oasis Travel</h1>
+                                <p class="text-sm text-muted">Сайт туристического агентства</p>
+                            </div>
+                            <span class="text-xs text-muted font-bold mt-1">2024</span>
+                        </div>
+                    </a>
+
+                    <a href="project-6.html" class="portfolio-item project-item group" data-category="branding">
+                        <div class="portfolio-img-wrap" style="background-color: #F3F4F6; position: relative;">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="Mono Arch">
+                            <span style="position: absolute; top: 16px; left: 16px; background: rgba(255,255,255,0.9); padding: 4px 12px; border-radius: 99px; font-size: 0.75rem; font-weight: 700; color: #333;">Архитектура</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div>
+                                <h1 class="text-xl font-bold mb-1">Mono Arch</h1>
+                                <p class="text-sm text-muted">Брендинг архитектурного бюро</p>
+                            </div>
+                            <span class="text-xs text-muted font-bold mt-1">2023</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light border-top text-center">
+            <div class="container max-w-800">
+                <h2 class="section-title mb-4">Хотите стать следующим в нашем портфолио?</h2>
+                <p class="hero-subtitle mb-8 mx-auto">Расскажите о своём проекте — мы создадим что-то выдающееся вместе.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Обсудить проект</a>
+            </div>
+        </section>
+    </main>
+
+     <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo">LUMINE<span class="logo-dot">.</span></a>
+                
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-circle" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-circle" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-circle" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Компания</h2>
+                <a href="about.html">О нас</a>
+                <a href="team.html">Команда</a>
+                <a href="blog.html">Блог</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Услуги</h2>
+                <a href="service-uiux.html">UI/UX Дизайн</a>
+                <a href="service-branding.html">Брендинг</a>
+                <a href="service-development.html">Веб-разработка</a>
+                <a href="pricing.html">Цены</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Контакты</h2>
+                <a href="mailto:luminestudio.hello@gmail.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    luminestudio.hello@gmail.com
+                </a>
+                <a href="tel:+380669908357" class="contact-link">
+                    +38 (095)688-07-26
+                </a>
+                <p>Одесса, улица Плещеева, 10</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Lumine Studio. Сайт создан для учебных целей</p>
+            <div class="footer-links">
+                <a href="privacy.html">Политика конфиденциальности</a>
+                <a href="terms.html">Условия использования</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projects = document.querySelectorAll('.project-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const filter = btn.getAttribute('data-filter');
+                    
+                    projects.forEach(project => {
+                        if (filter === 'all' || project.getAttribute('data-category') === filter) {
+                            project.classList.remove('hidden');
+                            setTimeout(() => project.style.opacity = '1', 50);
+                        } else {
+                            project.style.opacity = '0';
+                            setTimeout(() => project.classList.add('hidden'), 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

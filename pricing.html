@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="создание сайтов, веб-студия, разработка сайтов, заказать сайт, IT агентство, создание лендингов, разработка интернет-магазина,
+	разработка сайтов под ключ цена, заказать сайт визитку Одесса, веб студия портфолио, услуги веб разработчика, создание корпоративного сайта,Lumine Studio,Lumine Studio отзывы,Lumine Studio веб студия,веб студия Одесса,дизайн студия Одесса
+	,заказать сайт в Одессе,SEO,увеличить продажи через сайт,дизайн для IT-продуктов,редизайн старого сайта,как повысить конверсию сайта,верстка сайта">
+	
+	<meta name="description" content="Сайт веб-студии Lumine Studio.">
+	
+	<meta name="author" content="Stefurin Vadim">
+	
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены — Lumine Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pricing-card { background: var(--color-bg-light); border: 1px solid var(--color-border); border-radius: 24px; padding: 40px 32px; transition: 0.3s; position: relative; display: flex; flex-direction: column; }
+        .pricing-card.highlight { background: #fff; border-color: var(--color-bg-dark); box-shadow: 0 20px 40px rgba(0,0,0,0.08); transform: scale(1.02); z-index: 2; }
+        @media(max-width: 1024px) { .pricing-card.highlight { transform: none; } }
+        .badge-rec { position: absolute; top: -16px; left: 50%; transform: translateX(-50%); background: var(--color-bg-dark); color: #fff; padding: 6px 16px; border-radius: 99px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; }
+        .price-list { list-style: none; margin-bottom: 40px; flex-grow: 1; }
+        .price-list li { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 0.95rem; }
+        .icon-check { color: #10B981; font-weight: bold; }
+        .icon-cross { color: #CBD5E1; }
+        .text-dim { color: #94A3B8; }
+    </style>
+</head>
+<body>
+
+<header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">LUMINE<span class="logo-dot">.</span></a>
+            
+            <!-- Навигация для ПК -->
+            <nav class="nav-desktop">
+                <a href="about.html" class="nav-link">О нас</a>
+                
+                <div class="dropdown">
+                    <button class="nav-link dropdown-toggle" style="display: flex; align-items: center;">
+                        Услуги
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; margin-left: 4px;"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="service-uiux.html" class="dropdown-item">UI/UX Дизайн</a>
+                        <a href="service-branding.html" class="dropdown-item">Брендинг</a>
+                        <a href="service-development.html" class="dropdown-item">Веб-разработка</a>
+                        <a href="services.html" class="dropdown-item text-accent" style="margin-top: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">Все услуги &rarr;</a>
+                    </div>
+                </div>
+
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="blog.html" class="nav-link">Блог</a>
+                <a href="team.html" class="nav-link">Команда</a>
+                <a href="pricing.html" class="nav-link">Цены</a>
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+
+            <!-- Кнопка и бургер-меню для мобилок -->
+            <div class="header-actions">
+                <a href="brief.html" class="btn btn-primary btn-sm hidden-mobile">Начать проект</a>
+                <button class="mobile-toggle" aria-label="Меню">
+                   
+                </button>
+            </div>
+        </div>
+
+        <!-- Мобильное меню (скрыто по умолчанию) -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="mobile-link">Главная</a>
+            <a href="about.html" class="mobile-link">О нас</a>
+            <a href="services.html" class="mobile-link">Услуги</a>
+            <a href="portfolio.html" class="mobile-link">Портфолио</a>
+            <a href="blog.html" class="mobile-link">Блог</a>
+            <a href="team.html" class="mobile-link">Команда</a>
+            <a href="pricing.html" class="mobile-link">Цены</a>
+            <a href="contact.html" class="mobile-link">Контакты</a>
+            <a href="brief.html" class="btn btn-primary w-full mt-4" style="justify-content: center;">Начать проект</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-hero text-center border-bottom">
+            <div class="container max-w-800">
+                <div class="section-label justify-center">
+                    <span class="label-line"></span><span class="eyebrow mb-0 text-main">Стоимость</span><span class="label-line"></span>
+                </div>
+                <h1 class="hero-title mt-4 mb-6">Прозрачное ценообразование</h1>
+                <p class="hero-subtitle mx-auto mb-0">Никаких скрытых платежей. Выберите тариф, который подходит вашему проекту.</p>
+            </div>
+        </section>
+
+        <section class="section border-bottom" style="padding-top: 80px; padding-bottom: 120px;">
+            <div class="container">
+                <div class="grid-3 align-start">
+                    
+                    <div class="pricing-card">
+                        <h1 class="text-xl font-bold mb-2">Старт</h1>
+                        <div class="text-4xl font-bold text-accent mb-1">от 50 000 ₴</div>
+                        <div class="text-sm text-muted mb-6">за проект</div>
+                        <p class="text-sm text-muted mb-8">Идеально для малого бизнеса, стартапов и первых шагов в онлайне.</p>
+                        
+                        <ul class="price-list">
+                            <li><span class="icon-check">✓</span> <span class="text-main">Лендинг или сайт-визитка</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">Адаптивный дизайн</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">Базовая SEO-оптимизация</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">2 итерации правок</span></li>
+                            <li><span class="icon-cross">✕</span> <span class="text-dim">CMS система</span></li>
+                            <li><span class="icon-cross">✕</span> <span class="text-dim">Дизайн-система</span></li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline w-full" style="padding: 16px;">Начать</a>
+                    </div>
+
+                    <div class="pricing-card highlight">
+                        <div class="badge-rec">Рекомендуем</div>
+                        <h1 class="text-xl font-bold mb-2">Бизнес</h1>
+                        <div class="text-4xl font-bold text-main mb-1">от 150 000 ₴</div>
+                        <div class="text-sm text-muted mb-6">за проект</div>
+                        <p class="text-sm text-muted mb-8">Комплексное решение для растущих компаний, которым нужен полноценный сайт.</p>
+                        
+                        <ul class="price-list">
+                            <li><span class="icon-check">✓</span> <span class="text-main">Многостраничный сайт</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">Адаптивный дизайн</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">Расширенная SEO</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">Неограниченные правки</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">CMS система</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">Дизайн-система</span></li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary w-full" style="background: var(--color-bg-dark); padding: 16px;">Популярный выбор</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h1 class="text-xl font-bold mb-2">Enterprise</h1>
+                        <div class="text-4xl font-bold text-accent mb-1">Индивидуально</div>
+                        <div class="text-sm text-muted mb-6">обсуждается</div>
+                        <p class="text-sm text-muted mb-8">Для крупных брендов и сложных цифровых продуктов с уникальными требованиями.</p>
+                        
+                        <ul class="price-list">
+                            <li><span class="icon-check">✓</span> <span class="text-main">Сложные веб-сервисы</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">Мобильные приложения</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">SLA поддержка 24/7</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">Неограниченные правки</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">Выделенная команда</span></li>
+                            <li><span class="icon-check">✓</span> <span class="text-main">Полный SEO-аудит</span></li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline w-full" style="padding: 16px;">Связаться</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light border-top text-center">
+            <div class="container max-w-800">
+                <h2 class="section-title mb-4">Нужен индивидуальный расчёт?</h2>
+                <p class="hero-subtitle mb-8 mx-auto">Расскажите о проекте — мы подготовим детальное коммерческое предложение.</p>
+                <div class="flex justify-center" style="display: flex; gap: 16px; justify-content: center;">
+                    <a href="brief.html" class="btn btn-primary btn-lg">Получить КП</a>
+                    <a href="faq.html" class="btn btn-outline btn-lg">Частые вопросы</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo">LUMINE<span class="logo-dot">.</span></a>
+                
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-circle" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-circle" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-circle" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Компания</h2>
+                <a href="about.html">О нас</a>
+                <a href="team.html">Команда</a>
+                <a href="blog.html">Блог</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Услуги</h2>
+                <a href="service-uiux.html">UI/UX Дизайн</a>
+                <a href="service-branding.html">Брендинг</a>
+                <a href="service-development.html">Веб-разработка</a>
+                <a href="pricing.html">Цены</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Контакты</h2>
+                <a href="mailto:luminestudio.hello@gmail.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    luminestudio.hello@gmail.com
+                </a>
+                <a href="tel:+380669908357" class="contact-link">
+                    +38 (095)688-07-26
+                </a>
+                <p>Одесса, улица Плещеева, 10</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Lumine Studio. Сайт создан для учебных целей</p>
+            <div class="footer-links">
+                <a href="privacy.html">Политика конфиденциальности</a>
+                <a href="terms.html">Условия использования</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

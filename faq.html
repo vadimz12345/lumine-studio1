@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="создание сайтов, веб-студия, разработка сайтов, заказать сайт, IT агентство, создание лендингов, разработка интернет-магазина,
+	разработка сайтов под ключ цена, заказать сайт визитку Одесса, веб студия портфолио, услуги веб разработчика, создание корпоративного сайта,Lumine Studio,Lumine Studio отзывы,Lumine Studio веб студия,веб студия Одесса,дизайн студия Одесса
+	,заказать сайт в Одессе,SEO,увеличить продажи через сайт,дизайн для IT-продуктов,редизайн старого сайта,как повысить конверсию сайта,верстка сайта">
+	
+	<meta name="description" content="Сайт веб-студии Lumine Studio.">
+	
+	<meta name="author" content="Stefurin Vadim">
+	
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — Lumine Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Специфичные стили для аккордеона FAQ */
+        .faq-layout { display: grid; grid-template-columns: 1fr; gap: 48px; }
+        @media(min-width: 1024px) { .faq-layout { grid-template-columns: 1fr 3fr; } }
+        
+        .faq-sidebar { position: sticky; top: 120px; display: flex; flex-direction: column; gap: 8px; }
+        .faq-tab { text-align: left; padding: 12px 16px; border-radius: 12px; font-weight: 600; font-size: 0.95rem; color: var(--color-text-muted); cursor: pointer; border: none; background: transparent; transition: 0.3s; }
+        .faq-tab:hover { background: var(--color-bg-light); }
+        .faq-tab.active { background: var(--color-bg-dark); color: #fff; }
+        
+        .faq-category { display: none; animation: fadeIn 0.5s ease forwards; }
+        .faq-category.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .faq-item { border: 1px solid var(--color-border); border-radius: 16px; margin-bottom: 16px; background: #fff; overflow: hidden; }
+        .faq-question { width: 100%; text-align: left; padding: 24px; font-weight: 700; font-size: 1.1rem; background: transparent; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: var(--color-text-main); font-family: inherit; }
+        .faq-icon { font-size: 1.5rem; color: var(--color-text-muted); font-weight: 400; transition: transform 0.3s ease; }
+        .faq-item.active .faq-icon { transform: rotate(45deg); color: var(--color-accent); }
+        .faq-answer { padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, padding 0.3s ease; color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; }
+        .faq-item.active .faq-answer { padding-bottom: 24px; max-height: 500px; border-top: 1px solid var(--color-border); padding-top: 16px; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">LUMINE<span class="logo-dot">.</span></a>
+            
+            <!-- Навигация для ПК -->
+            <nav class="nav-desktop">
+                <a href="about.html" class="nav-link">О нас</a>
+                
+                <div class="dropdown">
+                    <button class="nav-link dropdown-toggle" style="display: flex; align-items: center;">
+                        Услуги
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; margin-left: 4px;"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="service-uiux.html" class="dropdown-item">UI/UX Дизайн</a>
+                        <a href="service-branding.html" class="dropdown-item">Брендинг</a>
+                        <a href="service-development.html" class="dropdown-item">Веб-разработка</a>
+                        <a href="services.html" class="dropdown-item text-accent" style="margin-top: 8px; border-top: 1px solid var(--color-border); padding-top: 12px;">Все услуги &rarr;</a>
+                    </div>
+                </div>
+
+                <a href="portfolio.html" class="nav-link">Портфолио</a>
+                <a href="blog.html" class="nav-link">Блог</a>
+                <a href="team.html" class="nav-link">Команда</a>
+                <a href="pricing.html" class="nav-link">Цены</a>
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+
+            <!-- Кнопка и бургер-меню для мобилок -->
+            <div class="header-actions">
+                <a href="brief.html" class="btn btn-primary btn-sm hidden-mobile">Начать проект</a>
+                <button class="mobile-toggle" aria-label="Меню">
+                   
+                </button>
+            </div>
+        </div>
+
+        <!-- Мобильное меню (скрыто по умолчанию) -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="mobile-link">Главная</a>
+            <a href="about.html" class="mobile-link">О нас</a>
+            <a href="services.html" class="mobile-link">Услуги</a>
+            <a href="portfolio.html" class="mobile-link">Портфолио</a>
+            <a href="blog.html" class="mobile-link">Блог</a>
+            <a href="team.html" class="mobile-link">Команда</a>
+            <a href="pricing.html" class="mobile-link">Цены</a>
+            <a href="contact.html" class="mobile-link">Контакты</a>
+            <a href="brief.html" class="btn btn-primary w-full mt-4" style="justify-content: center;">Начать проект</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-hero text-center border-bottom">
+            <div class="container max-w-800">
+                <div class="section-label justify-center">
+                    <span class="label-line"></span><span class="eyebrow mb-0 text-main">FAQ</span><span class="label-line"></span>
+                </div>
+                <h1 class="hero-title mt-4 mb-6">Частые вопросы</h1>
+                <p class="hero-subtitle mx-auto mb-0">Ответы на самые популярные вопросы о нашей работе, процессах и ценах.</p>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <div class="faq-layout">
+                    
+                    <div>
+                        <div class="faq-sidebar">
+                            <button class="faq-tab active" data-target="cat-1">Общие вопросы</button>
+                            <button class="faq-tab" data-target="cat-2">Процесс работы</button>
+                            <button class="faq-tab" data-target="cat-3">Стоимость</button>
+                            <button class="faq-tab" data-target="cat-4">Дизайн</button>
+                            <button class="faq-tab" data-target="cat-5">Техническое</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div id="cat-1" class="faq-category active">
+                            <h2 class="text-2xl font-bold mb-6">Общие вопросы</h2>
+                            <div class="faq-item">
+                                <button class="faq-question">Чем занимается Lumine Studio? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Lumine Studio — это студия дизайна и веб-разработки. Мы создаём сайты, мобильные приложения, разрабатываем фирменный стиль и UI/UX-дизайн для бизнеса любого масштаба.</div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">В каких городах вы работаете? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Мы базируемся в Одессе, но работаем удалённо с клиентами по всей Украине и за рубежом. Географических ограничений нет.</div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">Как давно вы работаете? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Студия основана в 2020 году. За это время мы реализовали более 150 проектов для клиентов из разных отраслей.</div>
+                            </div>
+                        </div>
+
+                        <div id="cat-2" class="faq-category">
+                            <h2 class="text-2xl font-bold mb-6">Процесс работы</h2>
+                            <div class="faq-item">
+                                <button class="faq-question">Как начать работу с вами? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Напишите нам через форму на сайте или по email. Мы проведём бесплатную консультацию, обсудим задачи и подготовим коммерческое предложение в течение 24 часов.</div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">Как долго длится разработка? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Лендинг — 1–2 недели. Корпоративный сайт — 4–6 недель. Сложные сервисы и приложения — от 2 месяцев. Точные сроки зависят от объёма задач.</div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">Вы работаете по договору? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Да, обязательно. Мы заключаем договор, в котором прописываем сроки, стоимость, этапы работ и права на результат. Работаем официально с юридическими и физическими лицами.</div>
+                            </div>
+                        </div>
+
+                        <div id="cat-3" class="faq-category">
+                            <h2 class="text-2xl font-bold mb-6">Стоимость</h2>
+                            <div class="faq-item">
+                                <button class="faq-question">Сколько стоит разработка сайта? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Лендинг — от 50 000 ₴, корпоративный сайт — от 150 000 ₴, сложные сервисы — от 300 000 ₴. Точная стоимость зависит от функционала и сроков. Напишите нам для расчёта.</div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">Как происходит оплата? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Работаем по предоплате: 50% при старте проекта, 50% при сдаче. Для крупных проектов возможна поэтапная оплата.</div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">Есть ли скрытые платежи? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Нет. Все расходы прописываются в договоре до начала работ. Если в процессе появляются дополнительные задачи — согласовываем стоимость отдельно.</div>
+                            </div>
+                        </div>
+
+                        <div id="cat-4" class="faq-category">
+                            <h2 class="text-2xl font-bold mb-6">Дизайн</h2>
+                            <div class="faq-item">
+                                <button class="faq-question">Сколько вариантов дизайна вы предлагаете? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Обычно мы разрабатываем 2–3 концепции главной страницы. После выбора концепции дорабатываем остальные страницы в едином стиле.</div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">Можно ли вносить правки? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Да. В базовом тарифе — 2 итерации правок, в расширенных — неограниченные правки в рамках согласованного ТЗ.</div>
+                            </div>
+                        </div>
+
+                        <div id="cat-5" class="faq-category">
+                            <h2 class="text-2xl font-bold mb-6">Техническое</h2>
+                            <div class="faq-item">
+                                <button class="faq-question">На каких технологиях вы работаете? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Frontend: React, Next.js, TypeScript, HTML/CSS/JS. Backend: Node.js, PHP. Выбираем стек под конкретную задачу.</div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">Вы занимаетесь хостингом и доменом? <span class="faq-icon">+</span></button>
+                                <div class="faq-answer">Помогаем с выбором и настройкой хостинга. Домен регистрируете самостоятельно или мы помогаем.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section border-top text-center">
+            <div class="container max-w-800">
+                <h2 class="section-title mb-4">Не нашли ответ?</h2>
+                <p class="hero-subtitle mb-8 mx-auto">Напишите нам — ответим в течение нескольких часов.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Задать вопрос &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+     <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo">LUMINE<span class="logo-dot">.</span></a>
+                
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-circle" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-circle" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-circle" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Компания</h2>
+                <a href="about.html">О нас</a>
+                <a href="team.html">Команда</a>
+                <a href="blog.html">Блог</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Услуги</h2>
+                <a href="service-uiux.html">UI/UX Дизайн</a>
+                <a href="service-branding.html">Брендинг</a>
+                <a href="service-development.html">Веб-разработка</a>
+                <a href="pricing.html">Цены</a>
+            </div>
+
+            <div class="footer-col">
+                <h2 class="footer-title">Контакты</h2>
+                <a href="mailto:luminestudio.hello@gmail.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer-icon"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    luminestudio.hello@gmail.com
+                </a>
+                <a href="tel:+380669908357" class="contact-link">
+                    +38 (095)688-07-26
+                </a>
+                <p>Одесса, улица Плещеева, 10</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Lumine Studio. Сайт создан для учебных целей</p>
+            <div class="footer-links">
+                <a href="privacy.html">Политика конфиденциальности</a>
+                <a href="terms.html">Условия использования</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Переключение категорий
+            const tabs = document.querySelectorAll('.faq-tab');
+            const categories = document.querySelectorAll('.faq-category');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    categories.forEach(c => c.classList.remove('active'));
+                    
+                    tab.classList.add('active');
+                    document.getElementById(tab.getAttribute('data-target')).classList.add('active');
+                });
+            });
+
+            // Открытие/закрытие вопросов (Аккордеон)
+            const questions = document.querySelectorAll('.faq-question');
+            questions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const item = question.parentElement;
+                    const isActive = item.classList.contains('active');
+                    
+                    // Закрываем все открытые вопросы в текущей категории
+                    const currentCategory = item.parentElement;
+                    currentCategory.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                    
+                    // Если кликнули по закрытому, открываем его
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
